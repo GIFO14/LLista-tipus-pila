@@ -138,7 +138,7 @@ public class Interfície extends javax.swing.JFrame {
         for (int i = 0; i < cadena.length(); i++) {
             if (cadena.charAt(i) == '(' || cadena.charAt(i) == '{' || cadena.charAt(i) == '[') {
                 pila.Introduir(cadena.charAt(i));
-                System.out.println(cadena.charAt(i));
+                
 
             } else {
 

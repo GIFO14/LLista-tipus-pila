@@ -1,10 +1,10 @@
 package llistaPila;
 
-public class NodeInt {
+public class NodeIntPila {
     int informacio;
-    NodeInt seguent;
+    NodeIntPila seguent;
     
-    public NodeInt(int valor){
+    public NodeIntPila(int valor){
         informacio=valor;
         seguent=null;
     }

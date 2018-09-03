@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 public class Pila {
 
-    private NodeInt UltimValorIntroduit;
+    private NodeIntPila UltimValorIntroduit;
     int mida = 0;
     String llista = "";
 
@@ -20,7 +20,7 @@ public class Pila {
 
     //Mètode per a introduir un node a la pila
     public void IntroduirNode(int node) {
-        NodeInt nou_node = new NodeInt(node);
+        NodeIntPila nou_node = new NodeIntPila(node);
         nou_node.seguent = UltimValorIntroduit;
         UltimValorIntroduit = nou_node;
         mida++;
@@ -53,7 +53,7 @@ public class Pila {
 
     //Mètode per a mostrar contingut de la pila
     public void MostrarValors() {
-        NodeInt recorregut = UltimValorIntroduit;
+        NodeIntPila recorregut = UltimValorIntroduit;
 
         while (recorregut != null) {
             llista += recorregut.informacio + "\n";

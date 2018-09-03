@@ -1,10 +1,10 @@
 package llistaPila;
 
-public class NodeChar {
+public class NodeCharPila {
     char informacio;
-    NodeChar seguent;
+    NodeCharPila seguent;
     
-    public NodeChar(char caracter){
+    public NodeCharPila(char caracter){
         informacio=caracter;
         seguent=null;
     }

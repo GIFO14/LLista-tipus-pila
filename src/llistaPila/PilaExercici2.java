@@ -2,7 +2,7 @@ package llistaPila;
 
 public class PilaExercici2 {
 
-    private NodeChar UltimCharIntroduit;
+    private NodeCharPila UltimCharIntroduit;
 
     public PilaExercici2() {
         UltimCharIntroduit = null;
@@ -10,7 +10,7 @@ public class PilaExercici2 {
 
     //Mètode per a introduir caràcter dins la pila
     public void Introduir(char caracter) {
-        NodeChar nou_node = new NodeChar(caracter);
+        NodeCharPila nou_node = new NodeCharPila(caracter);
         nou_node.informacio = caracter;
 
         if (UltimCharIntroduit == null) {
