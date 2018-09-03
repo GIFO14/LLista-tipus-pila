@@ -1,4 +1,4 @@
-package practicantjava;
+package llistaPila;
 
 import javax.swing.JOptionPane;
 

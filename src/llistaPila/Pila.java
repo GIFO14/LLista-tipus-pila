@@ -1,10 +1,10 @@
-package practicantjava;
+package llistaPila;
 
 import javax.swing.JOptionPane;
 
 public class Pila {
 
-    private Node UltimValorIntroduit;
+    private NodeInt UltimValorIntroduit;
     int mida = 0;
     String llista = "";
 
@@ -20,7 +20,7 @@ public class Pila {
 
     //Mètode per a introduir un node a la pila
     public void IntroduirNode(int node) {
-        Node nou_node = new Node(node);
+        NodeInt nou_node = new NodeInt(node);
         nou_node.seguent = UltimValorIntroduit;
         UltimValorIntroduit = nou_node;
         mida++;
@@ -53,7 +53,7 @@ public class Pila {
 
     //Mètode per a mostrar contingut de la pila
     public void MostrarValors() {
-        Node recorregut = UltimValorIntroduit;
+        NodeInt recorregut = UltimValorIntroduit;
 
         while (recorregut != null) {
             llista += recorregut.informacio + "\n";
