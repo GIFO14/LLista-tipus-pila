@@ -216,6 +216,7 @@ public class GraficaDeBarres extends javax.swing.JFrame {
     }
     
     public void paint(Graphics g){
+        super.paint(g);
         if(bandera){
 
             int intVermell=Integer.parseInt(txtVermell.getText()),intVerd=Integer.parseInt(txtVerd.getText()),intBlau=Integer.parseInt(txtBlau.getText());
